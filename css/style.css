@@ -548,6 +548,31 @@ body {
     gap: var(--spacing-xs);
 }
 
+/* 查看全部产品按钮 */
+.section-footer {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.view-all-products-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all var(--transition-normal);
+    border: 2px solid var(--primary-color);
+}
+
+.view-all-products-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
 .feature-tag {
     background-color: var(--background-light);
     color: var(--text-secondary);

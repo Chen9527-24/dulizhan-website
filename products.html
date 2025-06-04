@@ -22,12 +22,19 @@
             
             <!-- 导航菜单 -->
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">首页</a></li>
-                <li><a href="about.html" class="nav-link">关于我们</a></li>
-                <li><a href="products.html" class="nav-link active">产品中心</a></li>
-                <li><a href="news.html" class="nav-link">新闻资讯</a></li>
-                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+                <li><a href="index.html" class="nav-link" data-zh="首页" data-en="Home">首页</a></li>
+                <li><a href="about.html" class="nav-link" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+                <li><a href="products.html" class="nav-link active" data-zh="产品中心" data-en="Products">产品中心</a></li>
+                <li><a href="news.html" class="nav-link" data-zh="新闻媒体" data-en="News & Media">新闻媒体</a></li>
+                <li><a href="contact.html" class="nav-link" data-zh="联系我们" data-en="Contact Us">联系我们</a></li>
             </ul>
+            
+            <!-- 语言切换按钮 -->
+            <div class="language-switch">
+                <button id="langToggle" class="lang-btn">
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
             
             <!-- 移动端菜单按钮 -->
             <div class="hamburger">
@@ -42,12 +49,12 @@
     <section class="page-header">
         <div class="container">
             <div class="page-header-content">
-                <h1 class="page-title">产品中心</h1>
-                <p class="page-subtitle">专业影视器材，助力您的创作梦想</p>
+                <h1 class="page-title" data-zh="产品中心" data-en="Products Center">产品中心</h1>
+                <p class="page-subtitle" data-zh="专业影视器材，助力您的创作梦想" data-en="Professional filming equipment to support your creative dreams">专业影视器材，助力您的创作梦想</p>
                 <nav class="breadcrumb">
-                    <a href="index.html">首页</a>
+                    <a href="index.html" data-zh="首页" data-en="Home">首页</a>
                     <span class="separator">></span>
-                    <span class="current">产品中心</span>
+                    <span class="current" data-zh="产品中心" data-en="Products Center">产品中心</span>
                 </nav>
             </div>
         </div>
@@ -57,26 +64,26 @@
     <section class="product-filter">
         <div class="container">
             <div class="filter-tabs">
-                <button class="filter-tab active" data-category="all">全部产品</button>
-                <button class="filter-tab" data-category="support">摄影支撑设备</button>
-                <button class="filter-tab" data-category="lighting">灯光设备</button>
-                <button class="filter-tab" data-category="accessories">拍摄辅助工具</button>
-                <button class="filter-tab" data-category="parts">配件耗材</button>
+                <button class="filter-tab active" data-category="all" data-zh="全部产品" data-en="All Products">全部产品</button>
+                <button class="filter-tab" data-category="support" data-zh="摄影支撑设备" data-en="Camera Support">摄影支撑设备</button>
+                <button class="filter-tab" data-category="lighting" data-zh="灯光设备" data-en="Lighting Equipment">灯光设备</button>
+                <button class="filter-tab" data-category="accessories" data-zh="拍摄辅助工具" data-en="Shooting Accessories">拍摄辅助工具</button>
+                <button class="filter-tab" data-category="parts" data-zh="配件耗材" data-en="Parts & Consumables">配件耗材</button>
             </div>
             
             <div class="filter-controls">
                 <div class="search-box">
-                    <input type="text" placeholder="搜索产品..." id="productSearch">
+                    <input type="text" placeholder="搜索产品..." id="productSearch" data-zh-placeholder="搜索产品..." data-en-placeholder="Search products...">
                     <button type="button" class="search-btn">🔍</button>
                 </div>
                 
                 <div class="sort-controls">
                     <select id="sortSelect">
-                        <option value="default">默认排序</option>
-                        <option value="name">按名称排序</option>
-                        <option value="price-low">价格从低到高</option>
-                        <option value="price-high">价格从高到低</option>
-                        <option value="newest">最新产品</option>
+                        <option value="default" data-zh="默认排序" data-en="Default Sort">默认排序</option>
+                        <option value="name" data-zh="按名称排序" data-en="Sort by Name">按名称排序</option>
+                        <option value="price-low" data-zh="价格从低到高" data-en="Price: Low to High">价格从低到高</option>
+                        <option value="price-high" data-zh="价格从高到低" data-en="Price: High to Low">价格从高到低</option>
+                        <option value="newest" data-zh="最新产品" data-en="Newest Products">最新产品</option>
                     </select>
                 </div>
             </div>
@@ -84,7 +91,7 @@
     </section>
 
     <!-- 产品展示区域 -->
-    <section class="products-showcase">
+    <section id="products-showcase" class="products-showcase">
         <div class="container">
             <div class="products-grid" id="productsGrid">
                 
@@ -517,5 +524,6 @@
     <!-- JavaScript文件 -->
     <script src="js/main.js"></script>
     <script src="js/products.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>
