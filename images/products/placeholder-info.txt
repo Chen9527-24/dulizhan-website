@@ -1,0 +1,47 @@
+# 产品图片占位符说明
+
+当前产品页面使用的是占位符图片，以下是需要的实际产品图片：
+
+## 需要的产品图片
+
+### 三脚架系列
+- tripod-carbon.jpg - 碳纤维专业三脚架
+- tripod-aluminum.jpg - 铝合金三脚架
+- tripod-travel.jpg - 便携旅行三脚架
+
+### 稳定器系列
+- gimbal-handheld.jpg - 手持稳定器
+- gimbal-professional.jpg - 专业级稳定器
+- gimbal-smartphone.jpg - 手机稳定器
+
+### 灯光设备
+- light-led-panel.jpg - LED面光灯
+- light-softbox.jpg - 柔光箱
+- light-ring.jpg - 环形灯
+
+### 音频设备
+- microphone-shotgun.jpg - 指向性话筒
+- microphone-wireless.jpg - 无线话筒系统
+- audio-recorder.jpg - 数字录音设备
+
+## 图片规格要求
+- 分辨率：至少 800x600 像素
+- 格式：JPG 或 PNG
+- 大小：每张图片不超过 500KB
+- 背景：建议使用白色或透明背景
+- 角度：产品正面或3/4角度展示
+
+## 临时解决方案
+当前使用 placeholder 服务提供占位符图片，实际部署时需要替换为真实产品图片。
+
+可以从以下网站获取免费的产品图片：
+- Unsplash: https://unsplash.com/
+- Pexels: https://www.pexels.com/
+- Pixabay: https://pixabay.com/
+
+搜索关键词：
+- "camera tripod"
+- "video equipment"
+- "photography gear"
+- "film equipment"
+- "professional camera"

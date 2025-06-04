@@ -1,0 +1,500 @@
+/* ==========================================================================
+   响应式设计样式文件
+   确保网站在不同设备上都能完美显示
+   ========================================================================== */
+
+/* 平板设备 (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* 容器调整 */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* 英雄区域调整 */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+    
+    /* 关于我们区域调整 */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    /* 解决方案区域调整 */
+    .solution-item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .solution-item:nth-child(even) {
+        direction: ltr;
+    }
+    
+    /* 可持续发展区域调整 */
+    .sustainability-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    /* 联系我们区域调整 */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    /* 页脚调整 */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+}
+
+/* 手机设备 (最大宽度 768px) */
+@media screen and (max-width: 768px) {
+    /* 基础字体调整 */
+    :root {
+        --font-size-base: 14px;
+        --font-size-large: 16px;
+        --spacing-sm: 12px;
+        --spacing-md: 20px;
+        --spacing-lg: 28px;
+        --spacing-xl: 36px;
+        --spacing-xxl: 48px;
+    }
+    
+    /* 容器调整 */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* 导航栏移动端样式 */
+    .nav-container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: var(--spacing-xl);
+        transition: left var(--transition-normal);
+        box-shadow: var(--shadow-medium);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: var(--spacing-sm) 0;
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-large);
+        padding: var(--spacing-sm);
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* 英雄区域移动端调整 */
+    .hero-section {
+        height: 100vh;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 24px;
+    }
+    
+    /* 区域标题调整 */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-base);
+    }
+    
+    /* 关于我们区域移动端调整 */
+    .about-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .about-features {
+        gap: var(--spacing-md);
+    }
+    
+    .feature-item {
+        padding: var(--spacing-md);
+    }
+    
+    /* 解决方案区域移动端调整 */
+    .solutions-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .solutions-grid {
+        gap: var(--spacing-lg);
+    }
+    
+    .solution-item {
+        padding: var(--spacing-lg);
+    }
+    
+    .image-placeholder {
+        height: 200px;
+        font-size: var(--font-size-base);
+    }
+    
+    .solution-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* 可持续发展区域移动端调整 */
+    .sustainability-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .sustainability-text h2 {
+        font-size: 1.75rem;
+    }
+    
+    /* 产品区域移动端调整 */
+    .featured-products-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .product-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* 新闻区域移动端调整 */
+    .news-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .news-item {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* 联系我们区域移动端调整 */
+    .contact-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .contact-info h2 {
+        font-size: 1.75rem;
+    }
+    
+    .inquiry-form {
+        padding: var(--spacing-lg);
+    }
+    
+    /* 页脚移动端调整 */
+    .footer {
+        padding: var(--spacing-xl) 0 var(--spacing-lg);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* 小屏手机设备 (最大宽度 480px) */
+@media screen and (max-width: 480px) {
+    /* 进一步缩小间距 */
+    :root {
+        --spacing-sm: 10px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+        --spacing-xxl: 40px;
+    }
+    
+    /* 导航栏进一步调整 */
+    .nav-logo h1 {
+        font-size: 20px;
+    }
+    
+    .nav-logo span {
+        font-size: 10px;
+    }
+    
+    /* 英雄区域进一步调整 */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-small);
+    }
+    
+    /* 区域标题进一步调整 */
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* 按钮调整 */
+    .btn {
+        padding: 12px 20px;
+        font-size: var(--font-size-small);
+    }
+    
+    /* 产品卡片调整 */
+    .product-info {
+        padding: var(--spacing-sm);
+    }
+    
+    .product-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* 新闻卡片调整 */
+    .news-content {
+        padding: var(--spacing-sm);
+    }
+    
+    .news-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* 表单调整 */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: var(--font-size-small);
+    }
+    
+    .inquiry-form {
+        padding: var(--spacing-md);
+    }
+}
+
+/* 超大屏幕设备 (最小宽度 1400px) */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .solution-content h3 {
+        font-size: 2rem;
+    }
+}
+
+/* 横屏模式调整 */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        height: 100vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .scroll-indicator {
+        bottom: var(--spacing-sm);
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .navbar,
+    .hero-section,
+    .scroll-indicator,
+    .hamburger {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .section-title {
+        font-size: 18pt;
+        margin-bottom: 12pt;
+    }
+    
+    .btn {
+        display: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    :root {
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        --border-color: #000000;
+        --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3);
+        --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+    
+    .btn-primary {
+        background-color: #000000;
+        border: 2px solid #000000;
+    }
+    
+    .btn-secondary {
+        border: 2px solid #000000;
+        color: #000000;
+    }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .scroll-indicator {
+        animation: none;
+    }
+    
+    .hero-title,
+    .hero-subtitle,
+    .hero-buttons {
+        animation: none;
+    }
+}
+
+/* 暗色模式支持 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #ffffff;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --text-light: #999999;
+        --background-light: #1a1a1a;
+        --background-dark: #000000;
+        --white: #1a1a1a;
+        --border-color: #333333;
+    }
+    
+    .navbar {
+        background-color: rgba(26, 26, 26, 0.95);
+        border-bottom-color: #333333;
+    }
+    
+    .feature-item,
+    .product-card,
+    .news-item,
+    .inquiry-form {
+        background-color: #2c2c2c;
+    }
+    
+    .image-placeholder {
+        background: linear-gradient(135deg, #333333 0%, #2c2c2c 100%);
+        color: #cccccc;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background-color: #2c2c2c;
+        border-color: #444444;
+        color: #ffffff;
+    }
+    
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #999999;
+    }
+}

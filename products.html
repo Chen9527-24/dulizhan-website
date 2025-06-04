@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - Dearkol影视器材</title>
+    <meta name="description" content="Dearkol专业影视器材产品中心，提供摄影支撑设备、灯光设备、拍摄辅助工具等全系列专业影视器材">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 公司Logo -->
+            <div class="nav-logo">
+                <h1>DEARKOL</h1>
+                <span>FILMING EQUIPMENT</span>
+            </div>
+            
+            <!-- 导航菜单 -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="about.html" class="nav-link">关于我们</a></li>
+                <li><a href="products.html" class="nav-link active">产品中心</a></li>
+                <li><a href="news.html" class="nav-link">新闻资讯</a></li>
+                <li><a href="contact.html" class="nav-link">联系我们</a></li>
+            </ul>
+            
+            <!-- 移动端菜单按钮 -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">产品中心</h1>
+                <p class="page-subtitle">专业影视器材，助力您的创作梦想</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">首页</a>
+                    <span class="separator">></span>
+                    <span class="current">产品中心</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品分类筛选 -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="all">全部产品</button>
+                <button class="filter-tab" data-category="support">摄影支撑设备</button>
+                <button class="filter-tab" data-category="lighting">灯光设备</button>
+                <button class="filter-tab" data-category="accessories">拍摄辅助工具</button>
+                <button class="filter-tab" data-category="parts">配件耗材</button>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索产品..." id="productSearch">
+                    <button type="button" class="search-btn">🔍</button>
+                </div>
+                
+                <div class="sort-controls">
+                    <select id="sortSelect">
+                        <option value="default">默认排序</option>
+                        <option value="name">按名称排序</option>
+                        <option value="price-low">价格从低到高</option>
+                        <option value="price-high">价格从高到低</option>
+                        <option value="newest">最新产品</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示区域 -->
+    <section class="products-showcase">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                
+                <!-- 摄影支撑设备 -->
+                <div class="product-item" data-category="support" data-name="碳纤维专业三脚架" data-price="2999">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/tripod-carbon.jpg" alt="碳纤维专业三脚架" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="tripod-carbon">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                            <div class="product-badge new">新品</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">碳纤维专业三脚架</h3>
+                            <p class="product-description">轻量化设计，承重能力强，适用于各种专业拍摄场景</p>
+                            <div class="product-features">
+                                <span class="feature-tag">轻量化</span>
+                                <span class="feature-tag">高承重</span>
+                                <span class="feature-tag">快速调节</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥2,999</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="tripod-carbon">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="support" data-name="专业摄像独脚架" data-price="899">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/monopod-pro.jpg" alt="专业摄像独脚架" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="monopod-pro">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业摄像独脚架</h3>
+                            <p class="product-description">便携设计，快速展开，适合移动拍摄和体育赛事</p>
+                            <div class="product-features">
+                                <span class="feature-tag">便携轻巧</span>
+                                <span class="feature-tag">快速展开</span>
+                                <span class="feature-tag">稳定可靠</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥899</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="monopod-pro">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="support" data-name="手持稳定器" data-price="1599">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/gimbal-handheld.jpg" alt="手持稳定器" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="gimbal-handheld">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                            <div class="product-badge hot">热销</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">手持稳定器</h3>
+                            <p class="product-description">三轴稳定技术，让您的拍摄更加平稳流畅</p>
+                            <div class="product-features">
+                                <span class="feature-tag">三轴稳定</span>
+                                <span class="feature-tag">长续航</span>
+                                <span class="feature-tag">智能跟随</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥1,599</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="gimbal-handheld">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 灯光设备 -->
+                <div class="product-item" data-category="lighting" data-name="高显色LED灯具" data-price="1299">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/led-panel.jpg" alt="高显色LED灯具" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="led-panel">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">高显色LED灯具</h3>
+                            <p class="product-description">专业级显色指数，色温可调，为您的拍摄提供完美光源</p>
+                            <div class="product-features">
+                                <span class="feature-tag">高显色</span>
+                                <span class="feature-tag">色温可调</span>
+                                <span class="feature-tag">节能环保</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥1,299</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="led-panel">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="lighting" data-name="专业柔光箱套装" data-price="599">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/softbox-kit.jpg" alt="专业柔光箱套装" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="softbox-kit">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业柔光箱套装</h3>
+                            <p class="product-description">多尺寸柔光箱组合，打造柔和均匀的光线效果</p>
+                            <div class="product-features">
+                                <span class="feature-tag">多尺寸</span>
+                                <span class="feature-tag">柔和光线</span>
+                                <span class="feature-tag">快速安装</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥599</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="softbox-kit">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="lighting" data-name="专业反光板系列" data-price="299">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/reflector-set.jpg" alt="专业反光板系列" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="reflector-set">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业反光板系列</h3>
+                            <p class="product-description">五合一反光板，金银白黑透明，满足各种补光需求</p>
+                            <div class="product-features">
+                                <span class="feature-tag">五合一</span>
+                                <span class="feature-tag">便携折叠</span>
+                                <span class="feature-tag">多种效果</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥299</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="reflector-set">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 拍摄辅助工具 -->
+                <div class="product-item" data-category="accessories" data-name="精密滑轨系统" data-price="3999">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/slider-system.jpg" alt="精密滑轨系统" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="slider-system">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                            <div class="product-badge premium">精品</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">精密滑轨系统</h3>
+                            <p class="product-description">精密制造，运行平稳，为您的镜头运动提供完美支持</p>
+                            <div class="product-features">
+                                <span class="feature-tag">精密制造</span>
+                                <span class="feature-tag">运行平稳</span>
+                                <span class="feature-tag">模块化设计</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥3,999</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="slider-system">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="accessories" data-name="专业摇臂设备" data-price="5999">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/jib-arm.jpg" alt="专业摇臂设备" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="jib-arm">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业摇臂设备</h3>
+                            <p class="product-description">多角度拍摄，平衡配重系统，实现流畅的摇臂运动</p>
+                            <div class="product-features">
+                                <span class="feature-tag">多角度</span>
+                                <span class="feature-tag">平衡配重</span>
+                                <span class="feature-tag">流畅运动</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥5,999</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="jib-arm">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="accessories" data-name="监视器支架系列" data-price="399">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/monitor-mount.jpg" alt="监视器支架系列" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="monitor-mount">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">监视器支架系列</h3>
+                            <p class="product-description">多角度调节，稳固安装，适配各种监视器设备</p>
+                            <div class="product-features">
+                                <span class="feature-tag">多角度调节</span>
+                                <span class="feature-tag">稳固安装</span>
+                                <span class="feature-tag">通用适配</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥399</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="monitor-mount">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 配件耗材 -->
+                <div class="product-item" data-category="parts" data-name="专业电池套装" data-price="199">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/battery-kit.jpg" alt="专业电池套装" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="battery-kit">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业电池套装</h3>
+                            <p class="product-description">高容量锂电池，长续航时间，配备智能充电器</p>
+                            <div class="product-features">
+                                <span class="feature-tag">高容量</span>
+                                <span class="feature-tag">长续航</span>
+                                <span class="feature-tag">智能充电</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥199</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="battery-kit">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="parts" data-name="专业存储卡" data-price="299">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/memory-card.jpg" alt="专业存储卡" class="lazy-image">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="memory-card">快速查看</button>
+                                <button class="add-to-cart-btn">加入询价</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">专业存储卡</h3>
+                            <p class="product-description">高速读写，大容量存储，适合4K视频录制</p>
+                            <div class="product-features">
+                                <span class="feature-tag">高速读写</span>
+                                <span class="feature-tag">大容量</span>
+                                <span class="feature-tag">4K支持</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-label">参考价格：</span>
+                                <span class="price-value">¥299</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary product-detail-btn" data-product="memory-card">查看详情</button>
+                                <button class="btn btn-secondary inquiry-btn">立即询价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- 加载更多按钮 -->
+            <div class="load-more-section">
+                <button class="btn btn-outline load-more-btn">加载更多产品</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品快速查看模态框 -->
+    <div class="modal product-modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">产品详情</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-detail-content">
+                    <div class="product-detail-image">
+                        <img id="modalProductImage" src="" alt="">
+                    </div>
+                    <div class="product-detail-info">
+                        <h3 id="modalProductName"></h3>
+                        <p id="modalProductDescription"></p>
+                        <div class="product-specifications">
+                            <h4>产品规格</h4>
+                            <ul id="modalProductSpecs">
+                                <!-- 动态生成规格信息 -->
+                            </ul>
+                        </div>
+                        <div class="product-detail-price">
+                            <span class="price-label">参考价格：</span>
+                            <span class="price-value" id="modalProductPrice"></span>
+                        </div>
+                        <div class="product-detail-actions">
+                            <button class="btn btn-primary inquiry-btn">立即询价</button>
+                            <button class="btn btn-secondary download-btn">下载资料</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>DEARKOL</h3>
+                        <p>专业影视器材制造商</p>
+                    </div>
+                    <p>自2005年成立以来，Dearkol致力于为全球影视制作提供高质量、实惠的专业器材设备。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="#">摄影支撑设备</a></li>
+                        <li><a href="#">灯光设备</a></li>
+                        <li><a href="#">拍摄辅助工具</a></li>
+                        <li><a href="#">配件耗材</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>公司信息</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="#">企业文化</a></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#">技术支持</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">产品保修</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Dearkol Filming Equipment Ltd. 版权所有</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">微信</a>
+                    <a href="#" class="social-link">微博</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
